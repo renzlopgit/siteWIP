@@ -1,5 +1,5 @@
 body {
-    background-color: #FAF8F5; /* Grigio chiaro */
+    background-color: #FAF8F5;
     color: #333;
     font-family: Arial, sans-serif;
     text-align: center;
@@ -12,7 +12,7 @@ h1 {
 }
 
 a {
-    color: #9190a9; /* Colore pervinca per il link */
+    color: #9190a9;
     text-decoration: none;
     font-weight: bold;
 }
@@ -22,7 +22,7 @@ a:hover {
 }
 
 footer {
-    font-size: 0.8em; /* Testo in piccolo */
+    font-size: 0.8em;
     color: #666;
     margin-top: 50px;
 }
@@ -47,10 +47,10 @@ iframe {
 
 
 .switch {
-    position: absolute; /* Posizione assoluta per poterlo spostare */
-    top: 10px;  /* Spostato dalla parte superiore */
-    right: 10px; /* Spostato dalla parte sinistra */
-    transform: scale(0.9); /* Rende il toggle più piccolo */
+    position: absolute;
+    top: 10px;  
+    right: 10px;
+    transform: scale(0.9);
 }
 
 .switch > span {
