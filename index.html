@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="0;url=/en"> <!-- Redirige subito a /en come default -->
+    <script>
+        // Funzione lingua del browser e reindirizzare
+        function redirectBasedOnLanguage() {
+            const userLang = navigator.language || navigator.userLanguage; // Rileva la lingua del browser
+            if (userLang.includes('en')) {
+                window.location.href = '/en'; //reindirizza a /en
+            } else {
+                window.location.href = '/it'; //reindirizza a /it
+            }
+        }
+
+        // Lancia il redirect quando il documento è pronto
+        document.addEventListener('DOMContentLoaded', redirectBasedOnLanguage);
+    </script>
+    <title>Redirecting...</title>
+</head>
+<body>
+    <p>Redirecting to the appropriate language...</p>
+</body>
+</html>
