@@ -318,5 +318,7 @@ a.footer-link {
   }
   ul li:nth-child(odd) .date {
     border-radius: 0 calc(var(--dateH) / 2) calc(var(--dateH) / 2) 0;
+
+
   }
 }
