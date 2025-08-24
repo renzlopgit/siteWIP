@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Da CANCELLARE una volta finito-->
+    <base href="/siteWIP/">
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/media/favicon.png" type="image/x-icon">
+    <!-- Link al file CSS esterno -->
+    <link rel="stylesheet" href="/assets/css/style.css">    
+    <title>Redirecting.</title>
+    <script>
+        // Funzione lingua del browser e reindirizzare
+        function redirectBasedOnLanguage() {
+            const userLang = navigator.language || navigator.userLanguage; // Rileva la lingua del browser
+            if (userLang.includes('en')) {
+                window.location.href = '/en'; //reindirizza a /en
+            } else {
+                window.location.href = '/it'; //reindirizza a /it
+            }
+        }
+    
+        // Lancia il redirect quando il documento è pronto
+        document.addEventListener('DOMContentLoaded', redirectBasedOnLanguage);
+    </script>
+</head>
+
+</head>
+<body style="text-align: left">
+    <p>Redirecting to the appropriate language.</p>
+    <p>If you're not redirected, choose your language:</p>
+  <ol style="list-style-type: none;">
+    <li><a href="/it">Italian</a></li>
+    <li><a href="/en">English</a></li>
+  </dl>
+</body>
+</html>
