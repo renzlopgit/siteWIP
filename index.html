@@ -3,21 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Da CANCELLARE una volta finito-->
-    <base href="/siteWIP/">
     <!-- Favicon -->
-    <link rel="icon" href="/assets/media/favicon.png" type="image/x-icon">
+    <link rel="icon" href="/siteWIP/assets/media/favicon.png" type="image/x-icon">
     <!-- Link al file CSS esterno -->
-    <link rel="stylesheet" href="/assets/css/style.css">    
+    <link rel="stylesheet" href="/siteWIP/assets/css/style.css">    
     <title>Redirecting.</title>
     <script>
         // Funzione lingua del browser e reindirizzare
         function redirectBasedOnLanguage() {
             const userLang = navigator.language || navigator.userLanguage; // Rileva la lingua del browser
             if (userLang.includes('en')) {
-                window.location.href = '/en'; //reindirizza a /en
+                window.location.href = '/siteWIP/en'; //reindirizza a /en
             } else {
-                window.location.href = '/it'; //reindirizza a /it
+                window.location.href = '/siteWIP/it'; //reindirizza a /it
             }
         }
     
@@ -31,8 +29,8 @@
     <p>Redirecting to the appropriate language.</p>
     <p>If you're not redirected, choose your language:</p>
   <ol style="list-style-type: none;">
-    <li><a href="/it">Italian</a></li>
-    <li><a href="/en">English</a></li>
+    <li><a href="/siteWIP/it">Italian</a></li>
+    <li><a href="/siteWIP/en">English</a></li>
   </dl>
 </body>
 </html>
